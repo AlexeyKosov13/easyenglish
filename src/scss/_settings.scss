@@ -1,0 +1,254 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.site-container {
+  overflow: hidden;// если используете на сайте position: sticky - уберите эту настройку
+  width: 1440px;
+}
+
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+
+  @include tablet{
+    padding: 0 calc(var(--container-offset) - 35px);
+  }
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.btn {
+  font-size: 20px;
+  font-family: 'MuktaVaani';
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 10px 34px;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  border: 3px solid #323232;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--dark-color);
+    background-color: transparent;
+    border: 3px solid #323232;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.btn__block {
+  cursor: pointer;
+  background: #747171;
+  border-radius: 72px;
+  font-family: 'MuktaVaani';
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 38px;
+  color: var(--light-color);
+  padding: 15px 35px;
+  border: 3px solid #747171;
+  transition: all 0.3s ease-in-out;
+
+  @include mobile{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 13px 22px;
+  }
+
+  @include small-mobile{
+   padding: 8px 40px;
+  }
+
+
+
+  &:hover {
+    border: 2.5px solid #524D4D;
+    background-color: transparent;
+    color: #524D4D;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.title {
+    font-family: 'RBMultima';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 61px;
+    color: var(--light-color);
+    margin-bottom: 0;
+    max-width: 430px;
+
+    @include small-tablet{
+      font-size: 36px;
+      line-height: 48px;
+      max-width: 100%;
+    }
+
+    @include mobile{
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @include small-mobile{
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 7px;
+    }
+
+}
+
+.subtitle {
+  font-family: 'MuktaVaani';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #A3A3A3;
+  max-width: 430px;
+
+
+  @include small-tablet{
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  @include mobile{
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 17px;
+  }
+
+  @include small-mobile{
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 27px;
+  }
+
+}
+
+.img__block {
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  width: 50%;
+
+  @include small-mobile{
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+
+}

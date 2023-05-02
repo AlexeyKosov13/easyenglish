@@ -1,0 +1,37 @@
+.footer {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+
+  &__language {
+    display: flex;
+    align-items: center;
+  }
+
+  &__lang {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #313030;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  &__arrow {
+    cursor: pointer;
+  }
+
+  &__copy {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #313030;
+  }
+}

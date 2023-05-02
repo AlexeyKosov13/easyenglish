@@ -1,0 +1,409 @@
+.sign {
+
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--dark-color);
+    border-radius: 24px;
+
+    @include tablet{
+      padding-top: 46px;
+    }
+
+    @include small-tablet {
+      padding-bottom: 87px;
+    }
+
+    @include mobile{
+      padding-top: 50px;
+      padding-bottom: 205px;
+    }
+
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 200px;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+
+    }
+
+    @include mobile{
+
+    }
+
+    @include small-mobile{
+
+    }
+
+  }
+
+  &__title {
+    font-family: 'GTEestiDisplay';
+    font-weight: 900;
+    font-size: 74px;
+    line-height: 86px;
+    text-transform: lowercase;
+    color: var(--light-color);
+    margin-bottom: 30px;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 60px;
+    }
+
+    @include small-mobile{
+
+    }
+
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__or {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: #747171;
+    margin-top: 15px;
+
+    @include mobile{
+      font-size: 12px;
+      line-height: 18px;
+      align-self: end;
+    }
+
+    @include small-mobile{
+
+    }
+  }
+
+  &__remember {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: #747171;
+    align-self: end;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 40px;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+      font-size: 8px;
+      line-height: 12px;
+
+    }
+
+    @include small-mobile{
+
+    }
+
+    &:hover {
+      color: #fff;
+      transition: color 0.3s ease-in-out;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+      max-width: 100%;
+    }
+
+    @include small-mobile{
+
+    }
+
+    label {
+      font-family: 'MuktaVaani';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      text-transform: lowercase;
+      color: #FFFFFF;
+
+
+      @include mobile{
+        font-size: 14px;
+        line-height: 23px;
+
+      }
+
+      @include small-mobile{
+
+      }
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    input {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      width: 100%;
+      padding: 16px 11px;
+      margin-bottom: 5px;
+      border: none;
+
+      @include tablet{
+
+      }
+
+      @include small-tablet{
+
+      }
+
+      @include mobile{
+
+      }
+
+      @include small-mobile{
+
+      }
+
+    }
+  }
+
+  &__submit {
+    font-family: 'MuktaVaani';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #323232;
+    width: 400px;
+    background-color: #B28D94;
+    border-radius: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+      font-size: 24px;
+      line-height: 40px;
+      width: 100%;
+    }
+
+    @include small-mobile{
+
+    }
+
+    &:hover {
+      background-color: #887175;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+}
+
+.social {
+
+  &__item {
+    min-width: 400px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 13px 30px;
+    cursor: pointer;
+    border: none;
+
+    @include mobile{
+      font-size: 14px;
+      line-height: 16px;
+      min-width: 200px;
+      padding: 10px 10px 10px 30px;
+    }
+
+    @include small-mobile{
+
+    }
+
+  }
+
+  &__google {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #757575;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+      font-size: 14px;
+      line-height: 16px;
+
+    }
+
+    @include small-mobile{
+
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      position: absolute;
+      background: url("../../img/svg/google.svg") no-repeat;
+
+      @include tablet{
+
+      }
+
+      @include small-tablet{
+
+      }
+
+      @include mobile{
+        background-size: cover;
+        left: 0px;
+
+      }
+
+      @include small-mobile{
+
+      }
+    }
+
+
+    &:hover {
+      background-color: #b6b5b5;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__facebook {
+    font-family: 'SFPro';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    color: #FFFFFF;
+    background-color: #1877F2;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+
+    @include mobile{
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: -0.32px;
+
+    }
+
+    @include small-mobile{
+
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      position: absolute;
+      background: url("../../img/svg/facebook.svg") no-repeat;
+
+      @include tablet{
+
+      }
+
+      @include small-tablet{
+
+      }
+
+      @include mobile{
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+        left: 5px;
+
+      }
+
+      @include small-mobile{
+
+      }
+    }
+
+    &:hover {
+      background-color: #2564b6;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+}

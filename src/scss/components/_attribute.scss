@@ -1,0 +1,308 @@
+.attribute {
+  margin-bottom: 20px;
+
+  &__container {
+    padding: 0;
+  }
+
+  &__title {
+    font-family: 'RBMultima';
+    font-weight: 700;
+    font-size: 86px;
+    line-height: 103px;
+    color: #000000;
+    margin-bottom: 6px;
+
+    @include tablet{
+      font-size: 72px;
+      line-height: 86px;
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    @include small-mobile{
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    border: 3px solid #323232;
+    border-radius: 18px;
+    padding: 10px 30px;
+    width: 100%;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+      padding: 15px;
+    }
+
+    @include small-mobile{
+      padding: 11px 12px;
+    }
+  }
+
+  &__input {
+    border: none;
+    margin: 0;
+    outline: none;
+    -webkit-appearance: none;
+    font-family: 'RBMultima';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @include small-mobile{
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+
+    &::placeholder {
+      font-family: 'RBMultima';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+      color: #BBBBBB;
+      position: relative;
+
+      @include tablet{
+
+      }
+
+      @include small-tablet{
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      @include mobile{
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      @include small-mobile{
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        color: #000000;
+        background-image: url("../../img/svg/pen.svg");
+      }
+
+    }
+  }
+
+  &__mic {
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    outline: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet{
+
+    }
+
+    @include small-tablet{
+
+    }
+
+    @include mobile{
+
+    }
+
+    @include small-mobile{
+
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile{
+      flex-direction: column;
+    }
+
+    @include small-mobile{
+
+    }
+  }
+
+  &__help {
+    cursor: pointer;
+
+    &-img {
+      @include mobile{
+        width: 20px;
+        height: 20px;
+      }
+
+      @include small-mobile{
+
+      }
+    }
+
+
+  }
+
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -15px;
+
+  @include mobile{
+    margin-bottom: 27px;
+  }
+
+  @include small-mobile{
+    margin-left: -8px;
+      margin-right: -8px;
+  }
+
+}
+
+.block {
+
+  &__items {
+
+    @include mobile{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    @include small-mobile{
+
+    }
+
+  }
+
+  &__item {
+
+    background: #323232;
+    border-radius: 18px;
+    font-family: 'MuktaVaani';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 400px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    @include tablet{
+      width: 250px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+    }
+
+    @include small-tablet{
+      font-size: 24px;
+      line-height: 40px;
+      width: 220px;
+    }
+
+    @include mobile{
+      font-size: 16px;
+      line-height: 27px;
+      width: 150px;
+    }
+
+    @include small-mobile{
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    &-first {
+      font-family: 'RBMultima';
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: var(--light-color);
+      background: linear-gradient(0deg, rgba(137, 10, 24, 0.315) 0%, rgba(62, 65, 126, 0.432) 75%, rgba(54, 53, 137, 0.432) 100%);
+      border-radius: 18px;
+
+      border: none;
+      margin-bottom: 24px;
+
+      @include tablet{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 24px;
+        line-height: 29px;
+      }
+
+      @include small-tablet{
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      @include mobile{
+        width: 100%;
+
+      }
+
+      @include small-mobile{
+
+      }
+    }
+
+
+  }
+}

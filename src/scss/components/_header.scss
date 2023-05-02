@@ -1,0 +1,21 @@
+.header {
+
+
+  &__logo {
+    color: var(--dark-color);
+    font-family: 'GTEestiDisplay';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: lowercase;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+}
