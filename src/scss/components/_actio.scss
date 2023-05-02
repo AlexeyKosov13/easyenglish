@@ -1,0 +1,10 @@
+.actio {
+
+  &__container {
+
+
+    @include small-mobile{
+      padding: 0;
+    }
+  }
+}
